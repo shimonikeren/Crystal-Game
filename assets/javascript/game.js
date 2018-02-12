@@ -2,6 +2,9 @@ $(document).ready(function(){
 
 //declare variables 
 var total = 0;
+console.log("UPDATED TOTAL????" + total);
+var wins = 0;
+var loses = 0;
 var crys1Value = Math.floor((Math.random() * 12) + 1);
 var crys2Value = Math.floor((Math.random() * 12) + 1);
 var crys3Value = Math.floor((Math.random() * 12) + 1);
@@ -19,10 +22,9 @@ var crys4Value = Math.floor((Math.random() * 12) + 1);
 //as each crystal is clicked, add the value of that crystal to yourTotal 
 //display values in game by ADDING them to yourTotal 
 	$("#crystal1").click(function(){
-		var crys1Value = Math.floor(Math.random() * 12) + 1;  // returns a number between 1 and 12
 		console.log("Crystal 1 Value: " + crys1Value);
-		total = total + crys1Value;
-		console.log(total);
+		total = total +crys1Value;
+		console.log("New total: " + total);
 		$("#yourTotal").html("Your Total Score: " + total);
 		if (total === targetNumber) {
 		alert("WINNNNNN"); }
