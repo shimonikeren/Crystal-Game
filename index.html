@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
 	<title>Crystal Game</title>
 	<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="	crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
-
 </head>
 <body>
 
-<div class="container topclass">
-    <h1>Crystal Game</h1>
-    <p>Instructions Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dicta accusantium in accusamus temporibus mollitia </p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Crystal Game</h1>
+    <p>You will be given a random target number at the start of the game.</p>
+    <p>There are four crystals below. By clicking a crystal you will add a specific amount of points to your total score. </p>
+    <p>You win the game by matching your total score to the target number. If you go over, you lose.</p>
+    <p>The value of the crystal is hidden from you until you click on it.</p>
+  </div>
 </div>
 
-<div class="counters">
-	<ul>
-	  <li id="targetNumber">Target Number: </li>
-	   <li id="yourTotal">Your Total Score: 0</li>
-	    <li id="wins">Wins: 0</li>
-	    <li id="loses">Loses: 0</li>
-	 </ul>
+<div class="container">
+	<div class="row">
+		<div class="card col-sm-4" style="width: 18rem;">
+			<div class="card-header" id=targetNumber>
+			Target Number:
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item" id="yourTotal">Your Total Score: 0</li>
+				<li class="list-group-item" id="wins">Wins: 0</li>
+				<li class="list-group-item" id="loses">Loses: 0</li>
+			</ul>
+		</div>
+		<div class="col-sm-4">
+			<div id="winLoseImages">
+			<img id="winPic" src="assets/images/youwin.gif">
+			<img id="losePic" src="assets/images/youlose.png">
+		</div>
+		</div>
+	</div>
 </div>
 
-<div class="crystalimages">
-	<img  id="crystal1" src="assets/images/crystal1.png" alt="purple crystal">
-
-	<img id="crystal2" src="assets/images/crystal2.png" alt="brown crystal">
-
-	<img id="crystal3" src="assets/images/crystal3.png" alt="colorful crystal">
-
-	<img id="crystal4" src="assets/images/crystal4.png" alt="white crystal">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+			<img  id="crystal1" src="assets/images/crystal1.png" alt="purple crystal">
+		</div>
+		<div class="col-sm-3">
+			<img id="crystal2" src="assets/images/crystal2.png" alt="brown crystal">
+		</div>
+		<div class="col-sm-3">
+			<img id="crystal3" src="assets/images/crystal3.png" alt="colorful crystal">
+		</div>
+		<div class="col-sm-3">
+			<img id="crystal4" src="assets/images/crystal4.png" alt="white crystal">
+		</div>
+	</div>
 </div>
-
-
 
 </body>
 </html>
