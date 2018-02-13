@@ -8,5 +8,5 @@ This project uses _HTML, CSS, Bootstrap, Javascript, and jQuery_ to make a fun a
 *User wins the game by matching the total score to the target number. If user goes over, they loose.
 *The value of the crystal is hidden from user until the crystal is clicked on. 
 
-[Click Here to Play! Have fun!]: https://shimonikeren.github.io/Crystal-Game/
+[Click Here to Play! Have fun!](https://shimonikeren.github.io/Crystal-Game/)
 
