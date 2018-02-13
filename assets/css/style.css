@@ -1,4 +1,5 @@
-#targetNumber {
+#targetNumber,
+.jumbotron-fluid {
 	background: lightgrey;
 }
 
