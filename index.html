@@ -5,6 +5,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">		
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
 </head>
 <body>
@@ -19,40 +20,36 @@
   </div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="card col-sm-4" style="width: 18rem;">
-			<div class="card-header" id=targetNumber>
-			Target Number:
-			</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item" id="yourTotal">Your Total Score: 0</li>
-				<li class="list-group-item" id="wins">Wins: 0</li>
-				<li class="list-group-item" id="loses">Loses: 0</li>
-			</ul>
-		</div>
-		<div class="col-sm-4">
-			<div id="winLoseImages">
-			<img id="winPic" src="assets/images/youwin.gif" alt="winner gif">
-			<img id="losePic" src="assets/images/youlose.png" alt="you loose sign">
-		</div>
-		</div>
+<div class="jumbotron jumbotron-fluid jumbo2">
+	<div class="container">
+		<ul class = "list-inline">
+			<li class="list-inline-item" id="targetNumber">Target Number: </li>
+			<li class="list-inline-item" id="yourTotal">Your Total Score: 0</li>
+			<li class="list-inline-item" id="wins">Wins: 0</li>
+			<li class="list-inline-item" id="loses">Loses: 0</li>
+		</ul>
 	</div>
 </div>
 
 <div class="container">
 	<div class="row">
-		<div class="col-sm-3">
-			<img  id="crystal1" src="assets/images/crystal1.png" alt="purple crystal">
+		<div class="col-sm-2">
+				<img  id="crystal1" src="assets/images/crystal1.png" alt="purple crystal">
 		</div>
-		<div class="col-sm-3">
-			<img id="crystal2" src="assets/images/crystal2.png" alt="brown crystal">
+		<div class="col-sm-2">
+			<img id="crystal2" src="assets/images/crystal2.jpeg" alt="brown crystal">
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-2">
 			<img id="crystal3" src="assets/images/crystal3.png" alt="colorful crystal">
 		</div>
-		<div class="col-sm-3">
-			<img id="crystal4" src="assets/images/crystal4.png" alt="white crystal">
+		<div class="col-sm-2">
+			<img id="crystal4" src="assets/images/crystal4.jpg" alt="white crystal">
+		</div>
+		<div class="col-sm-2">
+			<div id="winLoseImages">
+				<img id="winPic" src="assets/images/youWin.gif" alt="winner gif">
+				<img id="losePic" src="assets/images/youLose.gif" alt="you loose sign">
+			</div>
 		</div>
 	</div>
 </div>
